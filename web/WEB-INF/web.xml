@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5">
+
+    <servlet>
+        <servlet-name>com.biomined.ouchihuahua.Ouchihuahua UserService</servlet-name>
+        <servlet-class>com.biomined.ouchihuahua.server.servlets.UserServiceServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>com.biomined.ouchihuahua.Ouchihuahua EventService</servlet-name>
+        <servlet-class>com.biomined.ouchihuahua.server.servlets.EventServiceServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>com.biomined.ouchihuahua.Ouchihuahua UserService</servlet-name>
+        <url-pattern>/Ouchihuahua/UserService</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>com.biomined.ouchihuahua.Ouchihuahua EventService</servlet-name>
+        <url-pattern>/Ouchihuahua/EventService</url-pattern>
+    </servlet-mapping>
+</web-app>

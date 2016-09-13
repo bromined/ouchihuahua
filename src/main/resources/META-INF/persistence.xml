@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="PaintrackerPersistenceUnit">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+
+        <class>com.biomined.ouchihuahua.shared.model.User</class>
+        <class>com.biomined.ouchihuahua.shared.model.PainEvent</class>
+
+        <properties>
+            <property name="eclipselink.jdbc.url" value="jdbc:mysql://localhost:3306/paintracker"/>
+            <property name="eclipselink.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+            <property name="eclipselink.jdbc.user" value="ptuser"/>
+            <property name="eclipselink.jdbc.password" value="$Cole!"/>
+            <property name="eclipselink.ddl-generation" value="create-or-extend-tables"/>
+            <!--<property name="javax.persistence.jdbc.ddl-generation" value="drop-and-create-tables"/>-->
+            <!--<property name="eclipselink.ddl-generation" value="create-tables"/>-->
+            <property name="eclipselink.ddl-generation.output-mode" value="database"/>
+
+            <!--CREATE USER 'ptuser'@'localhost' IDENTIFIED BY '$Cole!';-->
+            <!--GRANT ALL PRIVILEGES ON *.* TO 'ptuser'@'localhost'WITH GRANT OPTION;-->
+            <property name="eclipselink.logging.level" value="INFO"/>
+        </properties>
+    </persistence-unit>
+</persistence>

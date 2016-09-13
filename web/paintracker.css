@@ -1,0 +1,28 @@
+/** Add css rules here for your application. */
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+body, td, a, div, .p {
+    font-family: arial, sans-serif
+}
+
+.basicLabel {
+    margin: 5px;
+    /*font: x-large;*/
+    /*text-align: center;*/
+    /*vertical-align: middle;*/
+}
+
+.labelStyle {
+
+}
+
+.loginButton {
+    background-color: white;
+    text-align: center;
+}
+
